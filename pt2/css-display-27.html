@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display 27</title>
+    <style>
+      /*internal css */
+      /* dispay block */
+      #kotak1 {
+        background-color: yellow;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      #kotak2 {
+        background-color: aqua;
+        display: block;
+        width: 50%;
+        height: 50px;
+      }
+      #kotak3 {
+        background-color: pink;
+        display: block;
+        width: 20%;
+        height: 50px;
+      }
+      /* display inline */
+      #kotak4 {
+        background-color: yellow;
+        display: inline;
+        width: 100%;
+        height: auto;
+      }
+      #kotak5 {
+        background-color: aqua;
+        display: inline;
+        width: 50%;
+        height: 50px;
+      }
+      #kotak6 {
+        background-color: pink;
+        display: inline;
+        width: 20%;
+        height: 50px;
+      }
+      /* Display Inline Block */
+      #kotak7 {
+        background-color: yellow;
+        display: inline-block;
+        width: auto;
+        height: auto;
+      }
+      #kotak8 {
+        background-color: aqua;
+        display: inline-block;
+        width: 50%;
+        height: 50px;
+      }
+      #kotak9 {
+        background-color: pink;
+        display: inline-block;
+        width: 20%;
+        height: 50px;
+      }
+      /* Perbandingan */
+      #kotak10 {
+        background-color: yellow;
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+      #kotak11 {
+        background-color: aqua;
+        display: inline;
+        width: 50%;
+        height: 50px;
+      }
+      #kotak12 {
+        background-color: pink;
+        display: inline-block;
+        width: 20%;
+        height: 50px;
+      }
+      /* Penggunaan Display None */
+      #kotak13 {
+        background-color: yellow;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      #kotak14 {
+        background-color: aqua;
+        display: none;
+        width: 100px;
+        height: 100px;
+      }
+      #kotak15 {
+        background-color: pink;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      /* Penggunaan Display Hidden */
+      #kotak16 {
+        background-color: yellow;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      #kotak17 {
+        background-color: aqua;
+        display: inline-block;
+        visibility: hidden;
+        width: 100px;
+        height: 100px;
+      }
+      #kotak18 {
+        background-color: pink;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Property Display</h1>
+    <hr />
+    <!-- Display Block Elemen block akan memulai baris baru dan 
+        mengambil seluruh lebar yang tersedia -->
+    <h2>Display Block</h2>
+    <div id="kotak1">kotak 1 blok</div>
+    <div id="kotak2">kotak 2 blok</div>
+    <div id="kotak3">kotak 3 blok</div>
+    <hr />
+    <!-- Display Inline berdampingan dengan elemen lain dan hanya 
+        mengambil ruang yang diperlukan -->
+    <h2>Display Inline</h2>
+    <div id="kotak4">kotak 4 inline</div>
+    <div id="kotak5">kotak 5 inline</div>
+    <div id="kotak6">kotak 6 inline</div>
+    <hr />
+    <!-- Display Inline Block Lebar dapat diatur, tinggi dapat diatur,
+        default width dan heightnya, auto dan tata letaknya mengisi 
+        ruang yang kosong. Gabungan dari Display Block dan Inline -->
+    <h2>Display Inline Block</h2>
+    <div id="kotak7">kotak 7 Inline Block</div>
+    <div id="kotak8">kotak 8 Inline Block</div>
+    <div id="kotak9">kotak 9 Inline Block</div>
+  </body>
+  <hr />
+  <h2>Perbandingan</h2>
+  <div id="kotak10">kotak 10 Block</div>
+  <div id="kotak11">kotak 11 Inline</div>
+  <div id="kotak12">kotak 12 Inline Block</div>
+  <hr />
+  <!-- Display None menyembunyikan elemen agar tidak ditampilkan 
+    di halaman web -->
+  <h2>Display None</h2>
+  <div id="kotak13">kotak 13 inline-block</div>
+  <div id="kotak14">kotak 14 None</div>
+  <div id="kotak15">kotak 15 inline-block</div>
+  <hr />
+  <!-- Display Hidden menyembunyikan elemen namun tetap mengambil 
+    space pada layout -->
+  <h2>Display Hidden</h2>
+  <div id="kotak16">kotak 16 inline-block</div>
+  <div id="kotak17">kotak 17 Hidden</div>
+  <div id="kotak18">kotak 18 inline-block</div>
+</html>

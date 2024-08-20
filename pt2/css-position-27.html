@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position 27</title>
+    <style>
+      /* Mengatur Posisi Elemen */
+      /* Position Static */
+      .container {
+        display: block;
+        width: 90%;
+        padding: 15px;
+        background-color: aqua;
+        border: 1px solid black;
+      }
+      #kotak-static {
+        position: static;
+      }
+      #k1 {
+        position: static;
+      }
+      #k1 {
+        position: static;
+      }
+      #k2 {
+        position: static;
+      }
+      #k3 {
+        position: static;
+      }
+      #k4 {
+        position: relative;
+        z-index: 1;
+      }
+      #k5 {
+        z-index: -1;
+        position: relative;
+        top: 50px;
+        right: 100px;
+      }
+      #k6 {
+        position: relative;
+        top: 50px;
+        right: 100px;
+      }
+      #kotak-absolute {
+        position: relative;
+        height: 150px;
+      }
+      #k7 {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      #k8 {
+        position: absolute;
+        top: 50px;
+        left: 0;
+      }
+      #k9 {
+        position: absolute;
+      }
+      #kotak-fixed {
+        background-color: red;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 20px;
+        bottom: 0;
+        top: 0;
+        z-index: 2;
+      }
+      #kotak-sticky {
+        position: sticky;
+        top: 150px;
+      }
+      .kotak {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 1px dotted black;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .bg-green {
+        background-color: greenyellow;
+      }
+      .bg-pink {
+        background-color: pink;
+      }
+      .bg-aqua {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Property Position</h1>
+    <hr />
+    <!-- Position Static posisi default untuk elemen HTML -->
+    <h2>Position Static</h2>
+    <div id="kotak-static" class="container">
+      <div id="k1" class="kotak bg-yellow">Kotak 1 Static</div>
+      <div id="k2" class="kotak bg-green">Kotak 2 Static</div>
+      <div id="k3" class="kotak bg-pink">Kotak 3 Static</div>
+    </div>
+    <hr />
+    <!-- Position Relative diposisikan relatif terhadap posisi normalnya. 
+        Mengatur properti atas, kanan, bawah, dan kiri dari elemen yang 
+        posisinya relatif akan menyebabkannya disesuaikan menjauhi posisi 
+        normalnya. -->
+    <h2>Position Relative</h2>
+    <div id="kotak-relative" class="container">
+      <div id="k4" class="kotak bg-yellow">Kotak 4 Relative</div>
+      <div id="k5" class="kotak bg-green">Kotak 5 Relative</div>
+      <div id="k6" class="kotak bg-pink">Kotak 6 Relative</div>
+    </div>
+    <hr style="margin-top: 50px" />
+    <!-- Position Absolute posisi kotak pembatas tertentu dari margin 
+        atas dan kiri halaman web dan tidak menggangap container -->
+    <h2>Position Absolute</h2>
+    <div id="kotak-absolute" class="container">
+      <div id="k7" class="kotak bg-yellow">kotak 7 Absolute</div>
+      <div id="k8" class="kotak bg-green">kotak 8 Absolute</div>
+      <div id="k9" class="kotak bg-pink">kotak 9 Absolute</div>
+    </div>
+    <hr style="margin-top: 50px" />
+    <!-- Position Fixed diposisikan relatif terhadap area pandang, 
+        yang berarti area pandang selalu berada di tempat yang 
+        sama meskipun halaman di-scroll -->
+    <h2>Position Fixed</h2>
+    <div id="kotak-fixed">kotak fixed</div>
+    <hr />
+    <!-- Position Sticky bergantung pada posisi gulir -->
+    <h2>Position Sticky</h2>
+    <div id="kotak-sticky" class="kotak">Kotak Sticky</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

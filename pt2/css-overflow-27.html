@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css overflow 27</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #cover {
+        background-image: url("assets/IMG-BG.jpg");
+        display: block;
+        position: relative;
+        background-repeat: no-repeat;
+        /* mengatur ukuran gambar dengan menyesuaikan display layar */
+        background-size: cover;
+        /* Untuk menyesuikan gambar yang di tampilkan ke display layar */
+        background-position: center;
+        /* untuk mengatur tinggi mengunakan viewport height */
+        height: 100vh;
+        /* memotong element yang keluar batas kotak */
+        overflow: hidden;
+      }
+      .img-l-top {
+        position: absolute;
+        left: -150px;
+        top: -75px;
+      }
+      .img-r-top {
+        position: absolute;
+        right: -150px;
+        /* untuk memflip X pada element  */
+        transform: scaleX(-1);
+        top: -75px;
+      }
+      .img-l-bottom {
+        position: absolute;
+        left: -150px;
+        /* untuk memflip Y pada element  */
+        transform: scaleY(-1);
+        bottom: -75px;
+      }
+      .img-r-bottom {
+        position: absolute;
+        right: -150px;
+        /* untuk memflip element secar keseluruhan */
+        transform: scale(-1);
+        bottom: -75px;
+      }
+      #text-wedding {
+        margin-top: 20vh;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cover">
+      <div id="text-wedding">
+        <p>The Wedding Of</p>
+        <h2>Park Ji-hu & yoon chan-young</h2>
+        <p>17 Agustus 2024</p>
+      </div>
+      <img class="img-l-top" src="assets/IMG_0696.png" alt="" />
+      <img class="img-r-top" src="assets/IMG_0696.png" alt="" />
+      <img class="img-l-bottom" src="assets/IMG_0696.png" alt="" />
+      <img class="img-r-bottom" src="assets/IMG_0696.png" alt="" />
+    </div>
+  </body>
+</html>
